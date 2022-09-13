@@ -1,4 +1,3 @@
-% arman aminian 96243009 - mehdi teymorian 97243128
 set(0,'DefaultFigureVisible','off')
 freq_func = @(n) 2^((n-49)/12) * 440; % calculate each piano button frequency
 Fs = 10000; % sample frequency by Hz
