@@ -16,6 +16,9 @@ Depending on the octave, the end result looks something like this:
 
 ![wave](assets/wave.png)
 
+# How to run
+Run the m-file `piano.m` using Matlab.
+
 ## Sample Notes
 - [MP3](assets/sample.mp3)
 - [WAV](assets/sample.wav)
