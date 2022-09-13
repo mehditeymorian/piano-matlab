@@ -7,16 +7,23 @@ Each note's frequency is calculated using the below formula:
 
 ![formula](https://latex.codecogs.com/svg.image?\large&space;{\color{Green}&space;f(n)=2^{\frac{n-49}{12}}*4})
 
-Frequency rate is 10KHz and each note is played for 0.5sec. A `damped sine wave` is used to make it more realistic.
+Frequency rate is 10KHz and each note is played for 1 sec. A `damped sine wave` is used to make it more realistic.
 
 ![Fw](https://latex.codecogs.com/svg.image?\large&space;{\color{Green}&space;w=2*\pi*t*f(n)})                 
-![Fx](https://latex.codecogs.com/svg.image?\large&space;{\color{Green}&space;x(t)=&space;sin(w)*&space;e^{-0.008w}})
+![Fx](https://latex.codecogs.com/svg.image?\large&space;{\color{Green}&space;x(t)=&space;sin(w)*&space;e^{-0.001w}})
 
 Depending on the octave, the end result looks something like this:
 
 ![wave](assets/wave.png)
 
-# How to run
+Also, these are some of the parameters that you can tweak to change the output
+```text
+Fs % sample frenquency
+Length % length of each note by sec
+exp(-0.001*w) % factor of damped sine
+```
+
+## How to run
 Run the m-file `piano.m` using Matlab.
 
 ## Sample Notes
