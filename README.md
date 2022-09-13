@@ -5,7 +5,7 @@ This is a Keyboard Piano consists of 88 keys and 8 octaves. Octave zero has the 
 ## Calculation
 Each note's frequency is calculated using the below formula:
 
-![formula](https://latex.codecogs.com/svg.image?\large&space;{\color{Green}&space;f(n)=2^{\frac{n-49}{12}}*4})
+![formula](https://latex.codecogs.com/svg.image?\large&space;{\color{Green}&space;f(n)=2^{\frac{n-49}{12}}*440})
 
 Frequency rate is 10KHz and each note is played for 1 sec. A `damped sine wave` is used to make it more realistic.
 
